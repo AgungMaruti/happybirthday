@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sayang ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="music/Sempurna - Andra and the backbone.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Landing Page - PIN Input -->
+    <section id="landing" class="active">
+        <div class="glass-container">
+           
+            <h1 class="title">Happy Birthday Sayang!!</h1>
+            <p class="subtitle">PIN HP AKU NIH</p>
+            <div class="pin-input-container">
+                <input type="password" id="pinInput" maxlength="4" placeholder="• • • •" inputmode="numeric">
+                <p id="errorMsg" class="error-msg"></p>
+            </div>
+            <button onclick="checkPin()" class="btn-pink">Masuk ❤️</button>
+        </div>
+    </section>
+
+    <!-- Home Page - Ucapan -->
+    <section id="home">
+        <div class="glass-container home-container">
+            <h1 class="title-home">HAPPY BIRTHDAY SAYANGGGGG</h1>
+            
+            
+            <div class="message-box">
+                <!-- GANTI KATA-KATA DISINI SESUAI KEINGINANMU -->
+                <p>Happy Birthday Sayang, sekarang km udah 20 tahun yaa, selamat bertmbah umur ya sayangg, aku sayang banget sama kamu, semoga apa yang km impikan semakin dekat dan cepet terwujudnya ya sayang, kalo aku bilang semoga makin tambah cantik pasti km marah kan sayang? karena kamu selalu cantik sayangg selamanya ga ada habisnya dan tak terbatas, bahkan lagu ini kalah sempurna nya sama kamu sayang, kamu seseorang yang paling sempurna buat akuu!!!!</p>
+                
+                
+                <p class="highlight">I LOVE U SO MUCH SAYANG 💕</p>
+                <!-- AKHIR BAGIAN YANG BISA DIGANTI -->
+            </div>
+
+            <button onclick="goToGallery()" class="btn-pink">BUAT ORANG KEPO</button>
+        </div>
+    </section>
+
+    <!-- Gallery Section - Carousel -->
+    <section id="gallery">
+        <div class="gallery-wrapper">
+            <h2 class="gallery-title">INI DIA CANTIKNYA AKU</h2>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+                
+                <div class="carousel-track">
+                    <div class="carousel-slide"><img src="image/foto1.jpeg" alt="Memory 1"></div>
+                    <div class="carousel-slide"><img src="image/foto2.jpeg" alt="Memory 2"></div>
+                    <div class="carousel-slide"><img src="image/foto3.jpeg" alt="Memory 3"></div>
+                    <div class="carousel-slide"><img src="image/foto4.jpeg" alt="Memory 4"></div>
+                    <div class="carousel-slide"><img src="image/foto5.jpeg" alt="Memory 5"></div>
+                    <div class="carousel-slide"><img src="image/foto6.jpeg" alt="Memory 6"></div>
+                    <div class="carousel-slide"><img src="image/foto7.jpeg" alt="Memory 7"></div>
+                    <div class="carousel-slide"><img src="image/foto8.jpeg" alt="Memory 8"></div>
+                    <div class="carousel-slide"><img src="image/foto9.jpeg" alt="Memory 9"></div>
+                    <div class="carousel-slide"><img src="image/foto10.jpeg" alt="Memory 10"></div>
+                    <div class="carousel-slide"><img src="image/foto11.jpeg" alt="Memory 11"></div>
+                    <div class="carousel-slide"><img src="image/foto12.jpeg" alt="Memory 12"></div>
+                </div>
+
+                <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+            </div>
+
+            <div class="carousel-dots">
+                <!-- Dots akan di-generate otomatis oleh JavaScript -->
+            </div>
+
+            <button onclick="goToHome()" class="btn-pink btn-back">Kembali</button>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
